@@ -14,10 +14,17 @@
     <div id="output"></div>
     <script>
       // YOUR CODE GOES HERE
+      var movie = {
+        title: "Wedding Crashers",
+        duration: 120,
+        stars: ['Owen Wilson', 'Vince Vaughn', 'Bradley Cooper']
+      };
 
-      // Call the addOutput function with your output value
-      // when you are ready.
-      // Example: addOutput(outputValue);
+      function printMovie(movie) {
+        var theStars = movie.stars.join(", ");
+        console.log(movie.title + " lasts for " + movie.duration + " minutes. " + "Stars: " + theStars);
+      }
+      printMovie(movie);
     </script>
   </body>
 </html>
